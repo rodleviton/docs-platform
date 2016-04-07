@@ -1,0 +1,34 @@
+{
+  "name": "docs-platform",
+  "version": "1.0.0",
+  "description": "## Ideas",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --config webpack.config.js --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-docs": "grunt dgeni"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodleviton/docs-platform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodleviton/docs-platform/issues"
+  },
+  "homepage": "https://github.com/rodleviton/docs-platform#readme",
+  "devDependencies": {
+    "canonical-path": "0.0.2",
+    "dgeni": "^0.4.2",
+    "dgeni-packages": "^0.12.0",
+    "grunt": "^1.0.1",
+    "html-webpack-plugin": "^2.15.0",
+    "load-grunt-tasks": "^3.4.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.3"
+  }
+}

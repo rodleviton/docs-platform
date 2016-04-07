@@ -1,0 +1,24 @@
+{% extends 'base.template.html' %} 
+
+{% block body %}
+  <h2>{$ doc.name $}</h2>
+
+  <strong>({$ doc.docType $})</strong>
+  
+  <p>{$ doc.description $}</p>
+
+  {% if doc.examples.length -%}
+  <h3>Examples</h3>
+
+  {%- for example in doc.examples %}
+  <div class="component-container">
+    {$ example $}
+  </div>
+  {%- endfor %}
+  {%- endif %}
+
+  {%- if doc.usage %}
+    {$ doc.usage $}
+  {% endif -%}
+
+{% endblock %}
