@@ -19,8 +19,6 @@ module.exports = new Package('docs-platform', [
   // Specify the base path used when resolving relative paths to source and output files
   readFilesProcessor.basePath = path.resolve(__dirname, '../../');
 
-  console.log(readFilesProcessor.basePath);
-
   // Specify collections of source files that should contain the documentation to extract
   readFilesProcessor.sourceFiles = [{
     // Process all js files in `src` and its subfolders ...
@@ -29,7 +27,7 @@ module.exports = new Package('docs-platform', [
     // exclude: 'src/do-not-read.js',
     // When calculating the relative path to these files use this as the base path.
     // So `src/foo/bar.js` will have relative path of `foo/bar.js`
-    basePath: 'src'
+    basePath: 'tmp'
   }];
 
   // Add a folder to search for our own templates to use when rendering docs
@@ -41,10 +39,10 @@ module.exports = new Package('docs-platform', [
     // '${ doc.template }',
     // '${ doc.id }.${ doc.docType }.template.html',
     // '${ doc.id }.template.html',
-    '${ doc.docType }.template.html',
+    // '${ doc.docType }.template.html',
     'common.template.html'
   ];
 
   // Specify where the writeFilesProcessor will write our generated doc files
-  writeFilesProcessor.outputFolder = 'build';
+  writeFilesProcessor.outputFolder = 'tmp/components';
 });

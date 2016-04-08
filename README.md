@@ -35,3 +35,11 @@
 - Node static site generator
 - Pattern Lib
 - Angular components
+
+// Build static component partials into components folder
+// Create static site that loads templates
+// Dynamically require component modules
+
+
+1. Build component partials
+2. Build static site boilerplate capable of loading partials and creating menu
