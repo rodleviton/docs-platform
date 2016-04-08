@@ -36,10 +36,10 @@
 - Pattern Lib
 - Angular components
 
-// Build static component partials into components folder
-// Create static site that loads templates
-// Dynamically require component modules
-
-
-1. Build component partials
-2. Build static site boilerplate capable of loading partials and creating menu
+- [x] build component partials
+- [x] build static site boilerplate capable of loading partials and creating menu
+- [ ] create angular app and load angular deps
+- [ ] in template code rendering for examples
+- [ ] basic site template
+- [ ] basic site navigation
+- [ ] component / pattern lib theme loading
