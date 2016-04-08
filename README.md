@@ -36,6 +36,9 @@
 - Pattern Lib
 - Angular components
 
+---
+## TODO
+
 - [x] build component partials
 - [x] build static site boilerplate capable of loading partials and creating menu
 - [ ] create angular app and load angular deps
